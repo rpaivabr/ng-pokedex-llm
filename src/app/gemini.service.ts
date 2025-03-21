@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { GoogleGenerativeAI, Part } from '@google/generative-ai';
 
-const API_KEY = 'AIzaSyCd11xGRnDYS4ztuO8cxV0O4NXwmao4Q6U';
+const API_KEY = localStorage.getItem('API_KEY') || '';
 
 @Injectable({
   providedIn: 'root'
