@@ -102,7 +102,7 @@ export class MediaService {
 import { Injectable } from '@angular/core';
 import { GoogleGenerativeAI, Part } from '@google/generative-ai';
 
-const API_KEY = 'AIzaSyDgxQ-1G3OCa7sebtA8B_6fDMoiQJbk768'
+const API_KEY = '<sua_api_key_aqui>';
 
 @Injectable({
   providedIn: 'root'
