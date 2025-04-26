@@ -33,6 +33,7 @@ export class GeminiService {
       this.genAI = new GoogleGenerativeAI(apiKey);
       this.model = this.genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
     } catch (error) {
+      localStorage.removeItem('API_KEY');
       this.initialize();
       return Promise.reject("Erro ao gerar conteúdo: " + error);
     }
