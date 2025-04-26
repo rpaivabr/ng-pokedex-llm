@@ -55,7 +55,6 @@ export class AppComponent {
     console.log('responseText:', responseText);
     // converter o texto string JSON em um objeto JavaScript
     const cleanedText = responseText.replace(/`json\s*|\s*`/g, '');
-    console.log('cleanedText:', cleanedText);
     const pokemonResponse = JSON.parse(cleanedText) as PokemonData;
     console.log('pokemonResponse:', pokemonResponse);
     

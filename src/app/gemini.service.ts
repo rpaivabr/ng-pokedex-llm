@@ -29,7 +29,12 @@ export class GeminiService {
       apiKey = prompt("Digite sua API_KEY") || '';
     }
     localStorage.setItem('API_KEY', apiKey);
-    this.genAI = new GoogleGenerativeAI(apiKey);
-    this.model = this.genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    try {
+      this.genAI = new GoogleGenerativeAI(apiKey);
+      this.model = this.genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    } catch (error) {
+      this.initialize();
+      return Promise.reject("Erro ao gerar conteúdo: " + error);
+    }
   }
 }
