@@ -4,8 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Links Úteis
  - [Documentação Angular Oficial](https://angular.dev/)
- - [Google AI for Developers](https://ai.google.dev/gemini-api/docs/quickstart?lang=node)
+ - [Google AI for Developers](https://ai.google.dev/gemini-api/docs/get-started/tutorial?hl=pt-br&lang=node)
  - [AI Studio API keys](https://aistudio.google.com/app/apikey)
+ - [Firebase Studio](https://idx.google.com/)
  - [Angularizando](https://angularizando.com.br/artigos)
 
 ## 1. Instalação das dependências
